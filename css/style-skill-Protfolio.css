@@ -1,0 +1,172 @@
+/* Common */
+
+:root {
+  --primary-color: #ffb900;
+  --secondary-color: #171100;
+  --text-color: #5f5b53;
+  --white-color: #ffffff;
+  --font-heading: "Sen", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
+
+.heading-lv3 {
+  font-size: 1.6rem;
+  font-family: var(--font-heading);
+  color: var(--text-color);
+}
+
+span {
+  background-color: #ffb900;
+  font-weight: bolid;
+}
+
+body {
+  background: linear-gradient(135deg, #ff9a9e, var(--white-color));
+  width: 100%;
+  color: var(--white-color);
+}
+
+.summary {
+  margin-top: 3.5rem;
+}
+
+.summary .info {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 4rem;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  gap: 10rem;
+}
+
+.summary .info a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+footer {
+  margin: 10rem 20rem 0 20rem;
+  color: var(--secondary-color);
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+footer .content p {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+hr {
+  margin-top: 5rem;
+  width: 50%;
+  height: 2px;
+}
+
+.anh-header {
+  margin-top: 10rem;
+}
+
+.anh-header img {
+  width: 100%;
+}
+
+.info-main {
+  margin: 20rem 30rem 0 30rem;
+}
+
+.info-main .level {
+  display: flex;
+}
+
+.info-main .level div {
+  margin-left: 4rem;
+  width: 4rem;
+  height: 2rem;
+  background-color: var(--white-color);
+  margin: 0rem 1rem 0rem 1rem;
+  border: 1px solid var(--secondary-color);
+}
+
+.info-main .level div:first-child {
+  margin-left: 5rem;
+}
+
+.info-main .python,
+.info-main .java,
+.info-main .html,
+.info-main .css {
+  display: flex;
+  margin-top: 5rem;
+  font-size: 4rem;
+  margin-left: 3rem;
+  color: var(--secondary-color);
+}
+
+.info-main .python .level div:nth-of-type(-n + 3) {
+  background-color: red;
+}
+
+.info-main .java .level div:nth-of-type(-n + 7) {
+  background-color: red;
+}
+
+.info-main .html .level div:nth-of-type(-n + 565rtrq1) {
+  background-color: red;
+}
+
+.info-main .css .level div:nth-of-type(-n + 5) {
+  background-color: red;
+}
+
+.image {
+  margin-top: 10rem;
+  display: grid;
+  place-items: center;
+  height: 90rem;
+}
+
+.image .top {
+  width: 30rem;
+  display: flex;
+}
+
+.image .bottom {
+  display: flex;
+  width: 80rem;
+  gap: 20rem;
+}
+
+.image .bottom img {
+  width: 30rem;
+}
+
+.summary .info a:hover {
+  color: var(--text-color);
+}

@@ -1,0 +1,125 @@
+/* Common */
+
+:root {
+  --primary-color: #ffb900;
+  --secondary-color: #171100;
+  --text-color: #5f5b53;
+  --white-color: #ffffff;
+  --font-heading: "Sen", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
+
+.heading-lv3 {
+  font-size: 1.6rem;
+  font-family: var(--font-heading);
+  color: var(--text-color);
+}
+
+span {
+  background-color: #ffb900;
+  font-weight: bolid;
+}
+
+body {
+  background: linear-gradient(135deg, #ff9a9e, var(--white-color));
+  width: 100%;
+  color: var(--white-color);
+}
+
+.summary {
+  margin-top: 3.5rem;
+}
+
+.summary .info {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 4rem;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  gap: 10rem;
+}
+
+.summary .info a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+hr {
+  margin-top: 5rem;
+  width: 50%;
+  height: 2px;
+}
+
+footer {
+  margin: 10rem 20rem 0 20rem;
+  color: var(--secondary-color);
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+footer .content p {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.anh-header {
+  margin-top: 10rem;
+}
+
+.anh-header img {
+  width: 100%;
+}
+
+.info-main {
+  margin: 20rem 30rem 0 30rem;
+}
+
+.info-main div:not(:first-child) {
+  margin-top: 5rem;
+}
+
+.info-main a,
+.info-main i {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.image {
+  margin: 10rem 20rem 0 20rem;
+}
+
+.image img {
+  width: 100%;
+}
+
+.summary .info a:hover {
+  color: var(--text-color);
+}

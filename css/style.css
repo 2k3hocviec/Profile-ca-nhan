@@ -1,0 +1,114 @@
+/* Common */
+
+:root {
+  --primary-color: #ffb900;
+  --secondary-color: #171100;
+  --text-color: #5f5b53;
+  --white-color: #ffffff;
+  --font-heading: "Sen", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
+
+.heading-lv3 {
+  font-size: 1.6rem;
+  font-family: var(--font-heading);
+  color: var(--text-color);
+}
+
+body {
+  background-color: #e36623;
+  width: 100%;
+  height: 65rem;
+  color: var(--white-color);
+}
+
+header {
+  display: flex;
+}
+
+header .logo p {
+  font-size: 12.8rem;
+  transform: rotate(-90deg);
+  display: inline-block;
+  margin-top: 17rem;
+  border-bottom: 1px solid var(--white-color);
+}
+
+header .name {
+  font-size: 5rem;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .info {
+  margin-top: 23.8rem;
+  width: 84.7rem;
+  height: 15.1rem;
+}
+header .job {
+  display: flex;
+}
+
+header .job p {
+  border-top: 1px solid var(--white-color);
+  margin-top: 5rem;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .image img {
+  width: 35rem;
+  height: 35rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 5rem 10rem 0 0;
+}
+
+.summary {
+  margin-top: 3.5rem;
+}
+
+.summary .info {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 4rem;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  gap: 10rem;
+}
+
+.summary .info a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.summary .info a:hover {
+  color: var(--text-color);
+}

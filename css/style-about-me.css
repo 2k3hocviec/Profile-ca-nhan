@@ -1,0 +1,230 @@
+/* Common */
+
+:root {
+  --primary-color: #ffb900;
+  --secondary-color: #171100;
+  --text-color: #5f5b53;
+  --white-color: #ffffff;
+  --font-heading: "Sen", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
+
+.heading-lv3 {
+  font-size: 1.6rem;
+  font-family: var(--font-heading);
+  color: var(--text-color);
+}
+
+span {
+  background-color: #ffb900;
+  font-weight: bolid;
+}
+
+body {
+  background: linear-gradient(135deg, #ff9a9e, var(--white-color));
+  width: 100%;
+  color: var(--white-color);
+}
+
+.summary {
+  margin-top: 3.5rem;
+}
+
+.summary .info {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 4rem;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  gap: 10rem;
+}
+
+.summary .info a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+hr {
+  margin-top: 5rem;
+  width: 50%;
+  height: 2px;
+}
+
+.school {
+  margin-top: 10rem;
+  background-color: var(--white-color);
+  height: 44.6rem;
+  display: flex;
+  color: var(--secondary-color);
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.school .center .main {
+  display: flex;
+}
+
+.school .left {
+  margin-left: 4rem;
+}
+
+.school .center {
+  margin-right: 4rem;
+}
+
+.school .center .main .left .top,
+.school .center .main .left .bottom {
+  display: flex;
+}
+.school .logo img {
+  width: 30rem;
+}
+
+.school .left .anh1 {
+  margin-bottom: auto;
+}
+
+.school .left .anh1 img {
+  width: 30rem;
+}
+
+.school .center .main .left .top .anh1 img {
+  margin-top: 5rem;
+  margin-right: 2rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 3rem;
+}
+
+.school .center .main .left .top .anh2 img {
+  width: 40rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.school .center .main .left .bottom .anh1 img {
+  width: 30rem;
+  object-fit: cover;
+  margin-left: 5rem;
+  border-radius: 1rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.school .center .main .left .bottom .anh2 img {
+  width: 35rem;
+  object-fit: cover;
+  margin-left: 2rem;
+  border-radius: 1rem;
+  height: 17rem;
+  object-fit: cover;
+  margin-right: auto;
+}
+
+.school .center .main .right {
+  margin-left: 5rem;
+}
+
+.school .center .main .right img {
+  object-fit: cover;
+  border-radius: 1rem;
+  height: 41rem;
+  object-fit: cover;
+}
+
+.address {
+  color: var(--secondary-color);
+}
+
+.info-education {
+  margin: 10rem 10% 0rem 10%;
+  color: var(--secondary-color);
+}
+ul {
+  list-style: disc;
+  padding-left: 4rem;
+}
+
+ul li {
+  margin-top: 2rem;
+}
+
+.info-education .heading-lv2 {
+  margin-bottom: 5rem;
+  padding-left: 3rem;
+}
+
+.image {
+  margin: 10rem 10% 0 10%;
+}
+
+.image img {
+  border-radius: 5rem;
+}
+
+.image .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+.image .top .left img {
+  height: 30rem;
+}
+
+.image .top .right img {
+  height: 30rem;
+  width: 73.5rem;
+  object-fit: cover;
+}
+
+.image .bottom img {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+footer {
+  margin: 10rem 20rem 0 20rem;
+  color: var(--secondary-color);
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+footer .content p {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.summary .info a:hover {
+  color: var(--text-color);
+}
