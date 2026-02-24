@@ -43,11 +43,12 @@ body {
   color: var(--white-color);
 }
 
-header {
-  display: flex;
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-header .logo p {
+.header__logo p {
   font-size: 12.8rem;
   transform: rotate(-90deg);
   display: inline-block;
@@ -55,7 +56,11 @@ header .logo p {
   border-bottom: 1px solid var(--white-color);
 }
 
-header .name {
+.header__info {
+  display: grid;
+}
+
+.header__name {
   font-size: 5rem;
   color: var(--white-color);
   display: flex;
@@ -63,16 +68,11 @@ header .name {
   justify-content: center;
 }
 
-header .info {
-  margin-top: 23.8rem;
-  width: 84.7rem;
-  height: 15.1rem;
-}
-header .job {
+.header__job {
   display: flex;
 }
 
-header .job p {
+.header__job p {
   border-top: 1px solid var(--white-color);
   margin-top: 5rem;
   font-size: 4rem;
@@ -82,33 +82,82 @@ header .job p {
   margin-right: auto;
 }
 
-header .image img {
-  width: 35rem;
-  height: 35rem;
+.header__image img {
+  width: 40rem;
+  height: 40rem;
   object-fit: cover;
   border-radius: 50%;
   margin: 5rem 10rem 0 0;
 }
 
 .summary {
-  margin-top: 3.5rem;
+  margin: 3.5rem 0rem 3.5rem 0rem;
 }
 
-.summary .info {
-  width: fit-content;
-  margin: 0 auto;
-  font-size: 4rem;
-  display: flex;
+.summary__info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4rem;
+  font-size: 3rem;
   align-content: center;
   justify-items: center;
-  gap: 10rem;
 }
 
-.summary .info a {
+.summary__info a {
   text-decoration: none;
   color: var(--white-color);
 }
 
-.summary .info a:hover {
+.summary__info a:hover {
   color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%; /* Giảm kích thước font gốc */
+  }
+
+  body {
+    font-size: 1.4rem; /* Giảm kích thước font chữ */
+  }
+
+  .header {
+    grid-template-columns: 1fr; /* Chuyển sang 1 cột */
+    text-align: center;
+  }
+
+  .header__logo p {
+    font-size: 8rem; /* Giảm kích thước chữ */
+    margin-top: 5rem;
+  }
+
+  .header__info {
+    margin-top: 5rem;
+    width: auto; /* Cho phép co giãn theo màn hình */
+    height: auto;
+  }
+
+  .header__name {
+    font-size: 3rem; /* Giảm kích thước chữ */
+  }
+
+  .header__job p {
+    font-size: 2.5rem; /* Giảm kích thước chữ */
+    margin-top: 2rem;
+  }
+
+  .header__image img {
+    width: 20rem; /* Giảm kích thước ảnh */
+    height: 20rem;
+    margin: 2rem auto;
+  }
+
+  .summary__info {
+    grid-template-columns: 1fr; /* Chuyển sang 1 cột */
+    gap: 2rem; /* Giảm khoảng cách giữa các phần tử */
+  }
+
+  .summary__info a {
+    font-size: 2rem; /* Giảm kích thước chữ */
+  }
 }
