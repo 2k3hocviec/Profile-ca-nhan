@@ -48,22 +48,25 @@ body {
 }
 
 .summary {
-  margin-top: 3.5rem;
+  margin: 3.5rem 0rem 3.5rem 0rem;
 }
 
-.summary .info {
-  width: fit-content;
-  margin: 0 auto;
-  font-size: 4rem;
-  display: flex;
+.summary__info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4rem;
+  font-size: 3rem;
   align-content: center;
   justify-items: center;
-  gap: 10rem;
 }
 
-.summary .info a {
+.summary__info a {
   text-decoration: none;
   color: var(--white-color);
+}
+
+.summary__info a:hover {
+  color: var(--text-color);
 }
 
 footer {
@@ -129,19 +132,19 @@ hr {
   color: var(--secondary-color);
 }
 
-.info-main .python .level div:nth-of-type(-n + 3) {
+.python__level div:nth-of-type(-n + 3) {
   background-color: red;
 }
 
-.info-main .java .level div:nth-of-type(-n + 7) {
+.java__level div:nth-of-type(-n + 7) {
   background-color: red;
 }
 
-.info-main .html .level div:nth-of-type(-n + 565rtrq1) {
+.html__level div:nth-of-type(-n + 5) {
   background-color: red;
 }
 
-.info-main .css .level div:nth-of-type(-n + 5) {
+.css__level div:nth-of-type(-n + 5) {
   background-color: red;
 }
 
@@ -152,21 +155,17 @@ hr {
   height: 90rem;
 }
 
-.image .top {
+.image__top {
   width: 30rem;
   display: flex;
 }
 
-.image .bottom {
+.image__bottom {
   display: flex;
   width: 80rem;
   gap: 20rem;
 }
 
-.image .bottom img {
+.image__bottom-img {
   width: 30rem;
-}
-
-.summary .info a:hover {
-  color: var(--text-color);
 }

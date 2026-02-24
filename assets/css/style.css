@@ -48,11 +48,16 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header__logo p {
-  font-size: 12.8rem;
+  font-size: 10rem;
   transform: rotate(-90deg);
   display: inline-block;
-  margin-top: 17rem;
   border-bottom: 1px solid var(--white-color);
 }
 
@@ -83,8 +88,8 @@ body {
 }
 
 .header__image img {
-  width: 40rem;
-  height: 40rem;
+  width: 30rem;
+  height: 30rem;
   object-fit: cover;
   border-radius: 50%;
   margin: 5rem 10rem 0 0;
@@ -110,6 +115,10 @@ body {
 
 .summary__info a:hover {
   color: var(--text-color);
+}
+
+.wave-container {
+  margin-top: 3rem;
 }
 
 @media (max-width: 768px) {

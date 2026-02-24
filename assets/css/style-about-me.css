@@ -48,22 +48,25 @@ body {
 }
 
 .summary {
-  margin-top: 3.5rem;
+  margin: 3.5rem 0rem 3.5rem 0rem;
 }
 
-.summary .info {
-  width: fit-content;
-  margin: 0 auto;
-  font-size: 4rem;
-  display: flex;
+.summary__info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4rem;
+  font-size: 3rem;
   align-content: center;
   justify-items: center;
-  gap: 10rem;
 }
 
-.summary .info a {
+.summary__info a {
   text-decoration: none;
   color: var(--white-color);
+}
+
+.summary__info a:hover {
+  color: var(--text-color);
 }
 
 hr {
@@ -72,7 +75,7 @@ hr {
   height: 2px;
 }
 
-.school {
+.imageschool {
   margin-top: 10rem;
   background-color: var(--white-color);
   height: 44.6rem;
@@ -82,35 +85,36 @@ hr {
   gap: 1rem;
 }
 
-.school .center .main {
-  display: flex;
-}
-
-.school .left {
+.imageschool__left {
   margin-left: 4rem;
 }
 
-.school .center {
-  margin-right: 4rem;
-}
-
-.school .center .main .left .top,
-.school .center .main .left .bottom {
-  display: flex;
-}
-.school .logo img {
+.imageschool__logo img {
   width: 30rem;
 }
 
-.school .left .anh1 {
+.imageschool__anh1 {
   margin-bottom: auto;
 }
 
-.school .left .anh1 img {
+.imageschool__anh1 img {
   width: 30rem;
 }
 
-.school .center .main .left .top .anh1 img {
+.imageschool__center {
+  margin-right: 4rem;
+}
+
+.imageschool__center .main {
+  display: flex;
+}
+
+.imageschool__center .main .left .top,
+.imageschool__center .main .left .bottom {
+  display: flex;
+}
+
+.imageschool__anh2 img {
   margin-top: 5rem;
   margin-right: 2rem;
   height: 20rem;
@@ -118,14 +122,14 @@ hr {
   border-radius: 3rem;
 }
 
-.school .center .main .left .top .anh2 img {
+.imageschool__anh3 img {
   width: 40rem;
   height: 25rem;
   object-fit: cover;
   border-radius: 2rem;
 }
 
-.school .center .main .left .bottom .anh1 img {
+.imageschool__anh4 img {
   width: 30rem;
   object-fit: cover;
   margin-left: 5rem;
@@ -134,7 +138,7 @@ hr {
   object-fit: cover;
 }
 
-.school .center .main .left .bottom .anh2 img {
+.imageschool__anh5 img {
   width: 35rem;
   object-fit: cover;
   margin-left: 2rem;
@@ -144,11 +148,11 @@ hr {
   margin-right: auto;
 }
 
-.school .center .main .right {
+.imageschool__center .main .right {
   margin-left: 5rem;
 }
 
-.school .center .main .right img {
+.imageschool__anh6 img {
   object-fit: cover;
   border-radius: 1rem;
   height: 41rem;
@@ -185,7 +189,7 @@ ul li {
   border-radius: 5rem;
 }
 
-.image .top {
+.image__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,17 +197,17 @@ ul li {
   gap: 3rem;
 }
 
-.image .top .left img {
+.image__anh1 {
   height: 30rem;
 }
 
-.image .top .right img {
+.image__anh2 {
   height: 30rem;
   width: 73.5rem;
   object-fit: cover;
 }
 
-.image .bottom img {
+.image__anh3 {
   margin-top: 3rem;
   width: 100%;
 }
@@ -223,8 +227,4 @@ footer .content {
 footer .content p {
   font-size: 2.5rem;
   text-align: center;
-}
-
-.summary .info a:hover {
-  color: var(--text-color);
 }

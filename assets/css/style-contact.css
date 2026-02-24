@@ -48,22 +48,25 @@ body {
 }
 
 .summary {
-  margin-top: 3.5rem;
+  margin: 3.5rem 0rem 3.5rem 0rem;
 }
 
-.summary .info {
-  width: fit-content;
-  margin: 0 auto;
-  font-size: 4rem;
-  display: flex;
+.summary__info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4rem;
+  font-size: 3rem;
   align-content: center;
   justify-items: center;
-  gap: 10rem;
 }
 
-.summary .info a {
+.summary__info a {
   text-decoration: none;
   color: var(--white-color);
+}
+
+.summary__info a:hover {
+  color: var(--text-color);
 }
 
 hr {
@@ -118,21 +121,4 @@ footer .content p {
 
 .image img {
   width: 100%;
-}
-
-.info-main i,
-.info-main .code,
-.info-main .guitar,
-.info-main .football,
-.info-main .bed {
-  color: var(--secondary-color);
-  font-size: 2.5rem;
-}
-
-.info-main i {
-  margin-left: 2.5rem;
-}
-
-.summary .info a:hover {
-  color: var(--text-color);
 }
